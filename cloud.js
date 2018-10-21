@@ -107,7 +107,7 @@ AV.Cloud.define('payOrder', (request, response)=> {
   
 })
 
-// 继续支付未支付的订单
+// 删除未支付的订单
 AV.Cloud.define('deleteOrder', (request, response)=> {
   const user = request.currentUser;
   if (!user) {
